@@ -36,7 +36,7 @@ public class YouTubePlayerHelper {
                 "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/" + videoId +
                 "\" frameborder=\"0\" allowfullscreen></iframe>" +
                 "</body></html>";
-        // webView.loadData(html, "text/html", "utf-8");
+
 
         webView.loadUrl("https://www.youtube.com/embed/" + videoId);
 
@@ -48,7 +48,7 @@ public class YouTubePlayerHelper {
         Uri uri = Uri.parse(videoUrl);
         String videoId = uri.getQueryParameter("v");
         if (videoId == null) {
-            videoId = uri.getLastPathSegment(); // Fallback for URLs like https://youtu.be/videoId
+            videoId = uri.getLastPathSegment();
         }
         return videoId;
     }

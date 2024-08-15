@@ -41,14 +41,10 @@ public class StrangerThingsTrackAdapter extends RecyclerView.Adapter<StrangerThi
         holder.artist.setText(track.getArtist());
         holder.releaseYear.setText(track.getReleaseYear());
         holder.image.setImageResource(track.getImage());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(track.getSongUrl()));
-                context.startActivity(intent);
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(track.getSongUrl()));
+            context.startActivity(intent);
 
-            }
         });
     }
 

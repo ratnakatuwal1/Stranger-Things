@@ -10,9 +10,9 @@
     app:cardElevation="4dp">
 
     <LinearLayout
-        android:layout_marginTop="15dp"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:background="@android:color/white"
         android:orientation="vertical"
         android:padding="8dp">

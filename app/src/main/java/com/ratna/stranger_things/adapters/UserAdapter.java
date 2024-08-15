@@ -49,7 +49,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
             Glide.with(context).load(user.getPhoto()).into(holder.userImage);
         }
 
-        //   holder.userImage.setImageResource(user.getImageResId());
+
 
         holder.moreButton.setOnClickListener(v -> {
 

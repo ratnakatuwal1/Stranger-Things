@@ -4,9 +4,7 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,9 +20,7 @@ public class PlayListActivity extends AppCompatActivity {
     StrangerThingsTrackAdapter allTimeAdapter, seasonOneAdapter, seasonTwoAdapter, seasonThreeAdapter, seasonFourAdapter, seasonFiveAdapter;
     RecyclerView.LayoutManager allTimeLayoutManager, seasonOneLayoutManager, seasonTwoLayoutManager, seasonThreeLayoutManager, seasonFourLayoutManager, seasonFiveLayoutManager;
 
-    // set adapters for all the seasons and alltimebestsongs;
 
-    // set a arraylist for all the seasons and alltimebestsongs;
 
 
     @Override
@@ -70,9 +66,6 @@ public class PlayListActivity extends AppCompatActivity {
 
         seasonFourAdapter = new StrangerThingsTrackAdapter(seasonFourTrack, PlayListActivity.this);
         season4.setAdapter(seasonTwoAdapter);
-        // get datas of all season playlist
-        // set adapter for all time playlist
-        // set into recylverview into horizontal listview (reverse the data optional)
 
     }
 }
