@@ -64,7 +64,5 @@ public class DetailActivity extends AppCompatActivity {
                 Glide.with(this).load(user.getPhoto()).into(imgCharacterDetail);
             }
         }
-
-
     }
 }
